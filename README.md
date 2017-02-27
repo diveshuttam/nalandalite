@@ -3,7 +3,7 @@
 This project is forked from [CCDParadhe](https://github.com/ccpandhare)  
 detailed original readme can be found below  
   
-#NOTE OF CAUTION : Please note that it registers your login on nalanda. So you be careful while using this during online quiz. This project hasn't been tried for such circumstances yet. The author is not responsible for any consequences.  
+#NOTE OF CAUTION : Please note that the script registers your login on nalanda. So you be careful while using this during online quiz. This project hasn't been tried for such circumstances yet. The author is not responsible for any consequences.  
   
 ### Customizations   
 Just customized it for my personal use.  
