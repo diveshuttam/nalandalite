@@ -1,6 +1,16 @@
 # Nalanda Lite (nalandalite)
 #### Because being lazy is Being _BITSian_!
-
+This project is forked from [CCDParadhe](https://github.com/ccpandhare)  
+detailed original readme can be found below  
+### Customizations  
+Just customized it for my personal use.  
+It uses terminal input for getting credentials each time so that password is not displayed on the screen neither saved in a file(getpass module to enter password).    
+Please note that now username and password will have to be entered each time you run the script and code for reading credentials from file is commented out.  
+Support for saving encrypted credentials will be added soon.  
+Rest of the basic functionality remains the same (for usage details see below).
+If you prefer saving credentials please refer [ccpandhare/nalandalite](https://github.com/ccpandhare/nalandalite)
+  
+------------------------------------------------Original Readme--------------------------------------------------------------  
 Update lecture slides with one click. Regular trips to Nalanda? Now Lite.
 Are you a gen BITSian? Do you download lecture slides just before your Compre/MidSem? Then Nalanda Lite is what you need. You shouldn't be wasting time downloading each and every slide, should you? So take visiting Nalanda **Lite** and use Nalanda Lite.
 
