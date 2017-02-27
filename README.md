@@ -2,7 +2,10 @@
 #### Because being lazy is Being _BITSian_!
 This project is forked from [CCDParadhe](https://github.com/ccpandhare)  
 detailed original readme can be found below  
-### Customizations  
+  
+#NOTE OF CAUTION : Please note that it registers your login on nalanda. So you be careful while using this during online quiz. This project hasn't been tried for such circumstances yet. The author is not responsible for any consequences.  
+  
+### Customizations   
 Just customized it for my personal use.  
 It uses terminal input for getting credentials each time so that password is not displayed on the screen neither saved in a file(getpass module to enter password).    
 Please note that now username and password will have to be entered each time you run the script and code for reading credentials from file is commented out.  
