@@ -1,5 +1,5 @@
 import sys, re, os, cgi
-import sched, time, datetime
+import sched, time, datetime,getpass
 
 #options
 arguements = sys.argv
@@ -56,24 +56,24 @@ except:
 if debug == True:
     print "\tModule exists.\n"
 
-
 def main():
     #definitions
     loginurl = 'http://nalanda.bits-pilani.ac.in/login/index.php'
 
     #try and open credentials.txt file
-    debugger("\n\tOpening credentials.txt",0)
-    try:
-        credentials = open('credentials.txt','r').read().split('\n')
-    except IOError:
-        sys.exit("\n\tFile ERROR:\n\tProblem reading the credentials.txt file.\n\tCheck if file exists.\n\tIf the file exists, and you are still getting this error,\n\t\tEnter \'chmod u+r credentials.txt\' in the command line and try again.\n")
-    debugger("\tOpened Successfully.\n",1)
+    # debugger("\n\tOpening credentials.txt",0)
+    # try:
+    #     credentials = open('credentials.txt','r').read().split('\n')
+    # except IOError:
+    #     sys.exit("\n\tFile ERROR:\n\tProblem reading the credentials.txt file.\n\tCheck if file exists.\n\tIf the file exists, and you are still getting this error,\n\t\tEnter \'chmod u+r credentials.txt\' in the command line and try again.\n")
+    # debugger("\tOpened Successfully.\n",1)
 
-    debugger("\n\tChecking credentials.txt",0)
-    if len(credentials) < 2:
-        sys.exit("Problem with credentials.txt file.\nMake sure that you have entered both the username and password.")
-    debugger("\tFile is OK.\n",1)
-
+    # debugger("\n\tChecking credentials.txt",0)
+    # if len(credentials) < 2:
+    #     sys.exit("Problem with credentials.txt file.\nMake sure that you have entered both the username and password.")
+    # debugger("\tFile is OK.\n",1)
+    un=raw_input("enter username");
+    ps=getpass.getpass('Password:');
     # Start a session
     debugger("\n\tStarting Session.",0)
     try:
@@ -83,12 +83,12 @@ def main():
     debugger("\tSession initiated.\n",1)
     fetchfilter = re.compile('\^(.*)\^')
     login_data = {
-        'username': fetchfilter.findall(credentials[0])[0],
-        'password': fetchfilter.findall(credentials[1])[0],
+        'username':un        ,#fetchfilter.findall(credentials[0])[0],
+        'password':ps        ,#fetchfilter.findall(credentials[1])[0],
         'submit': 'Login',
     }
-    debugger("\n\tSupplied username: " + fetchfilter.findall(credentials[0])[0],0)
-    debugger("\tSupplied password: " + "*"*len(fetchfilter.findall(credentials[1])[0]) + "\n",1)
+    debugger("\n\tSupplied username: " + un +"\n",0)
+    #debugger("\tSupplied password: " + "*"*len(fetchfilter.findall(credentials[1])[0]) + "\n",1)
 
     #login
     debugger("\n\tLogging in.",0)
