@@ -12,6 +12,10 @@ Please note that now username and password will have to be entered each time you
 Support for saving encrypted credentials will be added soon.  
 Rest of the basic functionality remains the same (for usage details see below).
 If you prefer saving credentials please refer [ccpandhare/nalandalite](https://github.com/ccpandhare/nalandalite)
+
+### Note
+If you are using Windows 10(anniversary update) you may try [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) to run this script in exactly same way given below (This has been tested.). Or you can use command line 
+but you have to make sure you have python and pip installed; you can always [Google](https://www.google.co.in/?q=install+python+and+pip+on+windows#newwindow=1&q=install+python+and+pip+on+windows&*) it.
   
 ------------------------------------------------Original Readme--------------------------------------------------------------  
 Update lecture slides with one click. Regular trips to Nalanda? Now Lite.
